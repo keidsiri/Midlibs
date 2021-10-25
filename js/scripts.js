@@ -31,6 +31,11 @@ $(document).ready(function() {
     const verbInput = $("input#verb").val();
     const nounInput = $("input#noun").val();
 
+    let words = [person1Input, person2Input, animalInput, exclamationInput, verbInput, nounInput]
+    words.forEach(function(word) {
+      alert(word);
+    })
+
     $(".person1").text(person1Input);
     $(".person2").text(person2Input);
     $(".animal").text(animalInput);
